@@ -111,28 +111,6 @@ sections.forEach(section => {
     observer.observe(section);
 });
 
-// Typing Animation
-const typeWriter = (element, text, speed = 100) => {
-    let i = 0;
-    element.innerHTML = '';
-    
-    const type = () => {
-        if (i < text.length) {
-            element.innerHTML += text.charAt(i);
-            i++;
-            setTimeout(type, speed);
-        }
-    };
-    
-    type();
-};
-
-// Initialize typing animation
-const titleLogo = document.querySelector('.title__logo');
-if (titleLogo) {
-    typeWriter(titleLogo, 'E.F.A', 200);
-}
-
 // Form Submission
 contactForm.addEventListener('submit', (e) => {
     e.preventDefault();

@@ -238,8 +238,9 @@ h1, h2, h3 {
 }
 
 .hero__title {
-    font-size: 4rem;
-    margin-bottom: 1rem;
+    animation: none !important;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .title__logo {
